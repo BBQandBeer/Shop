@@ -1,0 +1,14 @@
+﻿<Window x:Name="MainWidnow" x:Class="Shop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="BBQandBeer Shop Project" Height="700" Width="1000" Icon="ico/Open.png" Background="#FF977979" Foreground="#FF471010" ResizeMode="CanResizeWithGrip">
+    <Grid x:Name="Main">
+        <Button x:Name="button_AddProducts" Content="Добави продукти" HorizontalAlignment="Center" Margin="64,22,0,0" VerticalAlignment="Top" Width="399" Click="button_Click" Height="40" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="button_ViewProducts" Content="Разгледай продукти" HorizontalAlignment="Center"  Margin="64,80,0,0" VerticalAlignment="Top" Width="400" Height="40" Click="button_ViewProducts_Click" FontFamily="Arial Black" FontSize="16"/>
+
+    </Grid>
+</Window>

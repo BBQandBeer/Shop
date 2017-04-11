@@ -17,7 +17,7 @@ using System.Configuration;
 
 namespace Shop
 {
-    /// <summary>
+    /// <summary> rezume
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window

@@ -67,12 +67,19 @@
     <Compile Include="AddProduct.xaml.cs">
       <DependentUpon>AddProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CoffeeShopPOS.xaml.cs">
+      <DependentUpon>CoffeeShopPOS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs" />
     <Compile Include="ShopContext.cs" />
     <Compile Include="ViewProducts.xaml.cs">
       <DependentUpon>ViewProducts.xaml</DependentUpon>
     </Compile>
     <Page Include="AddProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CoffeeShopPOS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -144,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico\POS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

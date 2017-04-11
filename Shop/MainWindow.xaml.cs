@@ -24,10 +24,11 @@ namespace Shop
     {
         public MainWindow()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             ShopContext shopContext = new ShopContext();
             //  var a = shopContext.Products.ToList();
-            
+
             shopContext.Database.Initialize(true);
             // Console.WriteLine(a);
 
@@ -43,6 +44,13 @@ namespace Shop
         {
             ViewProducts viewProducts = new ViewProducts();
             viewProducts.Show();
+        }
+
+        private void button_OppenPOS_Click(object sender, RoutedEventArgs e)
+        {
+            CoffeeShopPOS coffeeShopPOS = new CoffeeShopPOS();
+
+            coffeeShopPOS.Show();
         }
     }
 }

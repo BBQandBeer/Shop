@@ -24,12 +24,14 @@ namespace Shop
     public partial class ViewProducts : Window
     {
         private ShopContext prod = new ShopContext();
-        
+
 
 
 
         public ViewProducts()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+
             InitializeComponent();
 
 
@@ -41,12 +43,12 @@ namespace Shop
 
         private void filterBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var newContext = ((IObjectContextAdapter)prod).ObjectContext;
+            //var newContext = ((IObjectContextAdapter)prod).ObjectContext;
 
-            ObjectQuery<Product> filterProd = new ObjectQuery<Product>(
-               "Select VALUE pr from Products AS pr Where pr.ProductTypeId =" + (filterBox.SelectedIndex+1 ),newContext );
+            //ObjectQuery<Product> filterProd = new ObjectQuery<Product>(
+            //   "Select VALUE pr from Products AS pr Where pr.ProductTypeId =" + (filterBox.SelectedIndex + 1), newContext);
 
-
+            var filterProd = prod.Products.Where(x=>x.ProductTypeId==(filterBox.SelectedIndex+1)).ToList();
 
             dataGrid.ItemsSource = filterProd;
 

@@ -31,7 +31,7 @@ namespace Shop
         private byte[] imageFile; // picture variable declaration
         public AddProduct()
         {
-
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             DataContext = ProductType.GetProductTypes().Select(x => x.ProductTypeName).ToList();
 

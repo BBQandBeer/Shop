@@ -33,8 +33,11 @@ namespace Shop
             get { return purchase; }
             set
             {
+
                 purchase = value;
+
                 textBoxTotal.Text = purchase.ToString();
+
             }
 
         }
@@ -59,16 +62,17 @@ namespace Shop
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Product p = new Product() { Description = "Product A", Price = 1.99m };
+
             products.Add(p);
         }
 
 
         private void createTabbetPannel()
         {
-
-
+            
 
             var i = 1;
+
             foreach (ProductType pt in shopContext.ProductTypes.ToList())
             {
 
@@ -103,9 +107,7 @@ namespace Shop
                     myWrap.Children.Add(b);
 
                 }
-
-
-
+                                
                 tab.Content = myWrap;
 
                 i++;
@@ -128,18 +130,14 @@ namespace Shop
             Purchase =Purchase + p.Price;
 
             listProductsChosen.SelectedIndex = listProductsChosen.Items.Count - 1;
-
-
-
-
-
+                        
         }
 
 
         private void UpdateCustomerInformationPannel(Product product)
         {
             string currentDescription = product.Description;
-            string currentPrice = String.Format("{0}", product.Price);
+            string currentPrice = String.Format("{0:f2}", product.Price);
             string currentDescriptionPadded = currentDescription.PadRight(30);
 
             textInfoPanel.Text = currentDescriptionPadded + product.Price;
@@ -156,6 +154,19 @@ namespace Shop
             products.Remove(selectedProduct);
 
             
+        }
+
+        private void OpenPayment(object sender, RoutedEventArgs e)
+        {
+            Payment payment = new Payment(); 
+            payment.Show();
+            payment.PaymentMade += Payment_PaymentMade;
+            payment.PaymentAmount = purchase ; 
+        }
+
+        private void Payment_PaymentMade(object Sender, PaymentMadeEventArgs e)
+        {
+            MessageBox.Show(e.PaymentSuccess.ToString());
         }
     }
 }

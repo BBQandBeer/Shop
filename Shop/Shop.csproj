@@ -71,6 +71,9 @@
       <DependentUpon>CoffeeShopPOS.xaml</DependentUpon>
     </Compile>
     <Compile Include="Order.cs" />
+    <Compile Include="Payment.xaml.cs">
+      <DependentUpon>Payment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ShopContext.cs" />
     <Compile Include="ViewProducts.xaml.cs">
       <DependentUpon>ViewProducts.xaml</DependentUpon>
@@ -95,6 +98,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Payment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewProducts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,13 +154,23 @@
     <Resource Include="ico\Whiskey on the roX.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ico\eye.png" />
+    <Resource Include="dialog ico\eye.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico\Open.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico\POS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico\sign_dollar_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dialog ico\bag, transport, shipping icon.png" />
+    <Resource Include="dialog ico\baner, open, market icon.png" />
+    <Resource Include="dialog ico\Money icon.png" />
+    <Resource Include="dialog ico\shop, cash, market, money icon.png" />
+    <Resource Include="dialog ico\shop, estimates, office icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

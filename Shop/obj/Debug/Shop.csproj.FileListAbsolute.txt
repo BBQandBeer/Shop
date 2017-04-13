@@ -22,3 +22,5 @@ C:\Users\Iliya\documents\visual studio 2015\Projects\Shop_project\Shop\obj\Debug
 C:\Users\Iliya\documents\visual studio 2015\Projects\Shop_project\Shop\obj\Debug\ViewProducts.baml
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\CoffeeShopPOS.g.cs
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\CoffeeShopPOS.baml
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Payment.g.cs
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Payment.baml

@@ -8,6 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ico/open.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/bag,%20transport,%20shipping%20icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/baner,%20open,%20market%20icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/money%20icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/shop,%20cash,%20market,%20money%20icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/shop,%20estimates,%20office%20icon.png")]
 
 

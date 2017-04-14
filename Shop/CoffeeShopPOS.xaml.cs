@@ -16,6 +16,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Resources;
 using System.Windows.Shapes;
 
 namespace Shop
@@ -93,13 +94,26 @@ namespace Shop
 
                 var filteredProduct = shopContext.Products.Where(p => p.ProductTypeId == i);
 
+                string btnImage = pt.ProductTypeId.ToString();
+                Uri resourceUri = new Uri("../../ico/" + btnImage+".png", UriKind.Relative);
+                StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
+                BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);
+                var backGround = new ImageBrush();
+                backGround.ImageSource = temp;
+
                 foreach (var fp in filteredProduct.ToList())
                 {
+                    
 
-                    Button b = new Button() { Height = 100, Width = 100 };
+                    string btnName = fp.Description.Replace(" ","_");
+                    Button b = new Button() { Height = 120,
+                                                Width = 120 ,
+                                                Margin = new Thickness(10, 10, 10, 10),
+                                                HorizontalAlignment = HorizontalAlignment.Left,
+                                                Background = backGround, FontSize = 24};
 
-                    b.Content = fp.Description;
-                    var btnName = fp.Description.Replace(" ","_");
+                    b.Content = fp.Description.Replace(" ", "\n");
+
                     fp.Description = btnName;
                     b.Name = fp.Description.ToString();
 

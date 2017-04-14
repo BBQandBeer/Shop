@@ -97,8 +97,9 @@ namespace Shop
                     Button b = new Button() { Height = 100, Width = 100 };
 
                     b.Content = fp.Description;
-
-                    b.Name = fp.Description;
+                    var btnName = fp.Description.Replace(" ","_");
+                    fp.Description = btnName;
+                    b.Name = fp.Description.ToString();
 
                     b.Tag = fp;
 
@@ -175,7 +176,7 @@ namespace Shop
                 //save transaction;
                 foreach (var product in products)
                 {
-                    // order.OrderedProducts.Add(new OrderedProduct() {ProductID=product.ProductId });
+                    
 
                     shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = product.ProductId });
 

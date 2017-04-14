@@ -71,6 +71,7 @@
       <DependentUpon>CoffeeShopPOS.xaml</DependentUpon>
     </Compile>
     <Compile Include="Order.cs" />
+    <Compile Include="OrderedProduct.cs" />
     <Compile Include="Payment.xaml.cs">
       <DependentUpon>Payment.xaml</DependentUpon>
     </Compile>
@@ -150,7 +151,6 @@
     <Resource Include="ico\coffee cup2.ico" />
     <Resource Include="ico\milk.ico" />
     <Resource Include="ico\Roadside shop.ico" />
-    <Resource Include="ico\stock-vector-glass-of-whiskey-i-218928553.jpg" />
     <Resource Include="ico\Whiskey on the roX.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -161,9 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico\POS.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ico\sign_dollar_256.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="dialog ico\bag, transport, shipping icon.png" />

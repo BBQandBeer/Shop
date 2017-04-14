@@ -69,7 +69,7 @@ namespace Shop
 
         private void createTabbetPannel()
         {
-            
+
 
             var i = 1;
 
@@ -107,7 +107,7 @@ namespace Shop
                     myWrap.Children.Add(b);
 
                 }
-                                
+
                 tab.Content = myWrap;
 
                 i++;
@@ -127,10 +127,10 @@ namespace Shop
 
             UpdateCustomerInformationPannel(p);
 
-            Purchase =Purchase + p.Price;
+            Purchase = Purchase + p.Price;
 
             listProductsChosen.SelectedIndex = listProductsChosen.Items.Count - 1;
-                        
+
         }
 
 
@@ -153,20 +153,40 @@ namespace Shop
 
             products.Remove(selectedProduct);
 
-            
+
         }
 
         private void OpenPayment(object sender, RoutedEventArgs e)
         {
-            Payment payment = new Payment(); 
+            Payment payment = new Payment();
             payment.Show();
-            payment.PaymentMade += Payment_PaymentMade;
-            payment.PaymentAmount = purchase ; 
+            payment.PaymentMade += Payment_Success;
+            payment.PaymentAmount = purchase;
         }
 
-        private void Payment_PaymentMade(object Sender, PaymentMadeEventArgs e)
+        private void Payment_Success(object Sender, PaymentMadeEventArgs e)
         {
-            MessageBox.Show(e.PaymentSuccess.ToString());
+
+            Order order = new Order();
+            order.OrderDateTime = DateTime.Now;
+
+            if (e.PaymentSuccess == true)
+            {
+                //save transaction;
+                foreach (var product in products)
+                {
+                    // order.OrderedProducts.Add(new OrderedProduct() {ProductID=product.ProductId });
+
+                    shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = product.ProductId });
+
+
+                }
+
+                shopContext.Orders.Add(order);
+                shopContext.SaveChanges();
+
+                MessageBox.Show(e.PaymentSuccess.ToString());
+            }
         }
     }
 }

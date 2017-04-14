@@ -11,16 +11,19 @@ namespace Shop
     {
         public ShopContext() : base("ShopContext")
         {
-            //Database.SetInitializer<ShopDBContext>(new CreateDatabaseIfNotExists<ShopDBContext>());
-
             Database.SetInitializer<ShopContext>(new ShopDBinitializer());
-
-
         }
 
         public DbSet<Product> Products { get; set; }
+
         public DbSet<ProductType> ProductTypes { get; set; }
+
         public DbSet<Order> Orders { get; set; }
+
+        public DbSet<OrderedProduct> OrderedProducts { get; set; }
+
+
+
     }
 
 

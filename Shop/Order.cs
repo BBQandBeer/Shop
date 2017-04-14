@@ -12,10 +12,14 @@ namespace Shop
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderId { get; set; }
-        public DateTime OrderDateTime { get; set; }
-        public string CahierName { get; set; }
 
-        public virtual ObservableCollection<Product> ProductsOrdered { get; set; }
+        public DateTime OrderDateTime { get; set; }
+
+        public virtual IList<OrderedProduct> OrderedProducts { get; set; }
+
+
+
+        //public virtual ObservableCollection<Product> ProductsOrdered { get; set; }
 
     }
 }

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Shop.Payment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="Заплащане" Height="301.592" Width="458.355" Icon="dialog ico/Money icon.png">
+    <Grid>
+        <Label x:Name="labelBill" Content="Сметка:" HorizontalAlignment="Left" Margin="56,63,0,0" VerticalAlignment="Top" Height="26" Width="108" FontSize="14"/>
+        <Label x:Name="labelPayed" Content="Платени:" HorizontalAlignment="Left" Margin="56,112,0,0" VerticalAlignment="Top" Height="26" Width="108" FontSize="14"/>
+        <TextBox x:Name="textBoxBill" HorizontalAlignment="Left" Height="26" Margin="213,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="textBoxPayed" HorizontalAlignment="Left" Height="26" Margin="213,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="buttonPayment" Content="ОК" HorizontalAlignment="Left" Margin="139,195,0,0" VerticalAlignment="Top" Width="204" Background="#FF56E64F" Height="32" Click="PaymentHasBeenMade"/>
+
+    </Grid>
+</Window>

@@ -26,3 +26,35 @@ C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Payment.baml
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Statistics.g.cs
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Statistics.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\Shop.exe.config
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.exe
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\Shop.exe
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\Shop.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\DataLayer.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\DomainClasses.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\EntityFramework.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\DataLayer.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\DomainClasses.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\EntityFramework.xml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\AddProduct.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\CoffeeShopPOS.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\MainWindow.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Payment.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Statistics.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\ViewProducts.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\App.g.cs
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop_MarkupCompile.cache
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop_MarkupCompile.lref
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\AddProduct.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\CoffeeShopPOS.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\MainWindow.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Payment.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Statistics.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\ViewProducts.baml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.g.resources
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.Properties.Resources.resources
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.csproj.GenerateResource.Cache

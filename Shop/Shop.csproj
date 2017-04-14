@@ -70,12 +70,9 @@
     <Compile Include="CoffeeShopPOS.xaml.cs">
       <DependentUpon>CoffeeShopPOS.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderedProduct.cs" />
     <Compile Include="Payment.xaml.cs">
       <DependentUpon>Payment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShopContext.cs" />
     <Compile Include="Statistics.xaml.cs">
       <DependentUpon>Statistics.xaml</DependentUpon>
     </Compile>
@@ -116,8 +113,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -175,6 +170,16 @@
     <Resource Include="dialog ico\Money icon.png" />
     <Resource Include="dialog ico\shop, cash, market, money icon.png" />
     <Resource Include="dialog ico\shop, estimates, office icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{32AB2CB5-507B-45B9-9C23-56EC61C6D97C}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainClasses\DomainClasses.csproj">
+      <Project>{0848691E-8E1E-41D7-9CAF-45263888021F}</Project>
+      <Name>DomainClasses</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

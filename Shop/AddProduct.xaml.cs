@@ -101,6 +101,10 @@ namespace Shop
             prod.SaveChanges();
 
             MessageBox.Show("Продукта е записан");
+
+            Close();
+            AddProduct addedProduct = new AddProduct();
+            addedProduct.Show();
         }
     }
 }

@@ -84,24 +84,25 @@ namespace Shop
             //ProductType newProductType = new ProductType();
             //var products = ProductType.GetProductTypes();
             //newProductType.Add(products[1]);
+            Product productExist = new ShopContext().Products.Where(p => p.Description == textBoxDeskr.Text).SingleOrDefault();
+            if (productExist == null)
+            { 
+                Product newProduct = new Product();
 
+                newProduct.Description = textBoxDeskr.Text;
 
-            Product newProduct = new Product();
+                newProduct.Price = decimal.Parse(textBoxPrice.Text);
 
-            newProduct.Description = textBoxDeskr.Text;
+                newProduct.Picture = imageFile;
 
-            newProduct.Price = decimal.Parse(textBoxPrice.Text);
+                newProduct.ProductTypeId = comboCategories.SelectedIndex + 1;
 
-            newProduct.Picture = imageFile;
+                prod.Products.Add(newProduct);
 
-            newProduct.ProductTypeId = comboCategories.SelectedIndex + 1;
+                prod.SaveChanges();
 
-            prod.Products.Add(newProduct);
-
-            prod.SaveChanges();
-
-            MessageBox.Show("Продукта е записан");
-
+                MessageBox.Show("Продукта е записан");
+            }
             Close();
             AddProduct addedProduct = new AddProduct();
             addedProduct.Show();

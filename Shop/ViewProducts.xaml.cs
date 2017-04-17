@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity.Infrastructure;
+using DataLayer;
+using DomainClasses;
 
 namespace Shop
 {
@@ -52,6 +54,11 @@ namespace Shop
 
             dataGrid.ItemsSource = filterProd;
 
+        }
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            dataGrid.ItemsSource = prod.Products.ToList();
         }
     }
 }

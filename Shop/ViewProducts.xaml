@@ -5,24 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Разглеждане на продукти" Height="Auto" Width="Auto" Icon="dialog ico/eye.png">
+        Title="Разглеждане на продукти" Height="Auto" Width="672" Icon="dialog ico/eye.png">
     <Grid>
+        
         <ScrollViewer>
 
 
             <StackPanel>
 
 
+                <ComboBox x:Name="filterBox"
+                          HorizontalAlignment="Left" 
+                          Margin="31,20,0,0" Width="176" 
+                          SelectedIndex="0" SelectedValuePath="ProductId" 
+                          SelectionChanged="filterBox_SelectionChanged"/>
 
-
-                <ComboBox x:Name="filterBox"  Margin="-120,20,0,0" Width="176" SelectedIndex="0" SelectedValuePath="ProductId" SelectionChanged="filterBox_SelectionChanged"/>
-
-
-
+                <Button x:Name="Reset" Content="Изчисти филтър"
+                        Margin="10,-22,0,0" Width="176" Height="22" Background="#FFE84824" Click="btnReset_Click"></Button>
 
                 <DataGrid x:Name="dataGrid" 
                   AutoGenerateColumns="False"
-                  HorizontalAlignment="Center" 
+                  HorizontalAlignment="Left" 
                   Margin="31,36,0,0" 
                   VerticalAlignment="Center" 
                   Height="Auto" 
@@ -39,7 +42,8 @@
 
 
                         <DataGridTextColumn Binding="{Binding Description}"
-                                    Header="Име на продукт" IsReadOnly="True"/>
+                                            Header="Име на продукт" IsReadOnly="True"
+                                            Width="300" />
                         <DataGridTextColumn Binding="{Binding Price}"
                                     Header="Цена [лв.]" IsReadOnly="True"/>
                         <!--<DataGridTextColumn Binding="{Binding ProductTypeId}"
@@ -61,7 +65,8 @@
 
 
 
-        </ScrollViewer>
+        </ScrollViewer>            
+
     </Grid>
 
 

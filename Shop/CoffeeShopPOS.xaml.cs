@@ -1,8 +1,12 @@
-﻿using System;
+﻿using DataLayer;
+using DomainClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Migrations;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +18,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Resources;
 using System.Windows.Shapes;
 
 namespace Shop
@@ -59,12 +64,12 @@ namespace Shop
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+       /* private void button_Click(object sender, RoutedEventArgs e)
         {
             Product p = new Product() { Description = "Product A", Price = 1.99m };
 
             products.Add(p);
-        }
+        }*/
 
 
         private void createTabbetPannel()
@@ -91,15 +96,44 @@ namespace Shop
 
                 var filteredProduct = shopContext.Products.Where(p => p.ProductTypeId == i);
 
+                string btnImageByProductType = pt.ProductTypeId.ToString();
+                Uri imageResourceUri = new Uri("../../ico/" + btnImageByProductType + ".png", UriKind.Relative);
+                StreamResourceInfo imageStreamInfo = Application.GetResourceStream(imageResourceUri);
+                BitmapFrame tempBitmapFrame = BitmapFrame.Create(imageStreamInfo.Stream);
+                var backGroundbyProductType = new ImageBrush();
+                backGroundbyProductType.ImageSource = tempBitmapFrame;
+
                 foreach (var fp in filteredProduct.ToList())
                 {
+                    var btnBackground = new ImageBrush();
+                    if (fp.Picture == null)
+                    {
+                        btnBackground = backGroundbyProductType;
+                    }
+                    else
+                    {
+                        MemoryStream btnImage = new MemoryStream(fp.Picture);
+                        using (btnImage)
+                        {
+                            var btnImageSource = new BitmapImage();
+                            btnImageSource.BeginInit();
+                            btnImageSource.StreamSource = btnImage;
+                            btnImageSource.EndInit();
 
-                    Button b = new Button() { Height = 100, Width = 100 };
+                            btnBackground.ImageSource = btnImageSource;
+                        }
+                    }
+                        
+                    string btnName = fp.Description.Replace(" ","_");
+                    Button b = new Button() { Height = 120,
+                                                Width = 120 ,
+                                                Margin = new Thickness(10, 10, 10, 10),
+                                                HorizontalAlignment = HorizontalAlignment.Left,
+                                                Background = btnBackground, FontSize = 24};
 
-                    b.Content = fp.Description;
-                    var btnName = fp.Description.Replace(" ","_");
-                    fp.Description = btnName;
-                    b.Name = fp.Description.ToString();
+                    b.Content = fp.Description.Replace(" ", "\n");
+
+                    b.Name = btnName.ToString();
 
                     b.Tag = fp;
 
@@ -123,9 +157,15 @@ namespace Shop
             Button b = (Button)sender;
 
             Product p = (Product)b.Tag;
-
-            products.Add(p);
-
+            //Product isInTheList = products.Where(x => x.Description == p.Description).SingleOrDefault();
+            //if (isInTheList == null)
+            //{
+                products.Add(p);
+            //}
+            //else
+            //{
+            //    isInTheList.Price += p.Price;
+            //}
             UpdateCustomerInformationPannel(p);
 
             Purchase = Purchase + p.Price;
@@ -141,7 +181,7 @@ namespace Shop
             string currentPrice = String.Format("{0:f2}", product.Price);
             string currentDescriptionPadded = currentDescription.PadRight(30);
 
-            textInfoPanel.Text = currentDescriptionPadded + product.Price;
+            textInfoPanel.Text = currentDescriptionPadded + currentPrice;
 
         }
 
@@ -170,19 +210,35 @@ namespace Shop
 
             Order order = new Order();
             order.OrderDateTime = DateTime.Now;
-
+            //Order lastOrder=
             if (e.PaymentSuccess == true)
             {
-                //save transaction;
+                List<OrderedProduct> currentProductList = new List<OrderedProduct>();
+                // Removing duplicate keys and increasing Quantity value for each Product if duplicate event occur
                 foreach (var product in products)
                 {
-                    
 
-                    shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = product.ProductId });
+                    if (currentProductList.Count == 0)
+                    {
+                        currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
+                    }
+                    else if (currentProductList.Where(op => op.ProductID == product.ProductId) == null)
+                    {
+                        currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
+                    }
+                    else
+                    {
+                        int currentIndex = currentProductList.FindIndex(op => op.ProductID == product.ProductId);
+                        currentProductList[currentIndex].Quantity++;
+                    }
+                }                
+                
+                //save transaction;
 
-
+                foreach (var op in currentProductList)
+                {
+                    shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = op.ProductID, Quantity = op.Quantity });
                 }
-
                 shopContext.Orders.Add(order);
                 shopContext.SaveChanges();
 

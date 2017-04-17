@@ -35,9 +35,9 @@ namespace DataLayer
     {
         protected override void Seed(ShopContext context)
         {
-            IList<ProductType> defaultStandards = new List<ProductType>();
+            ICollection<ProductType> defaultStandards = new List<ProductType>();
 
-            IList<ProductType> initProdCategoryes = ProductType.GetProductTypes();
+            ICollection<ProductType> initProdCategoryes = ProductType.GetProductTypes();
             foreach (ProductType cat in initProdCategoryes)
                 context.ProductTypes.Add(cat);
 

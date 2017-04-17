@@ -10,7 +10,10 @@ namespace DomainClasses
 {
     public class OrderedProduct
     {
-
+        public OrderedProduct()
+        {
+            Quantity = 1;
+        }
         public Order Order { get; set; }
 
         public Product Product { get; set; }
@@ -20,7 +23,7 @@ namespace DomainClasses
 
         [Key, Column(Order = 2)]
         public int ProductID { get; set; }
-
-
+                
+        public int Quantity { get; set; }
     }
 }

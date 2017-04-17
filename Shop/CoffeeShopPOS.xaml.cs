@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Migrations;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -63,12 +64,12 @@ namespace Shop
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+       /* private void button_Click(object sender, RoutedEventArgs e)
         {
             Product p = new Product() { Description = "Product A", Price = 1.99m };
 
             products.Add(p);
-        }
+        }*/
 
 
         private void createTabbetPannel()
@@ -132,8 +133,7 @@ namespace Shop
 
                     b.Content = fp.Description.Replace(" ", "\n");
 
-                    fp.Description = btnName;
-                    b.Name = fp.Description.ToString();
+                    b.Name = btnName.ToString();
 
                     b.Tag = fp;
 
@@ -157,9 +157,15 @@ namespace Shop
             Button b = (Button)sender;
 
             Product p = (Product)b.Tag;
-
-            products.Add(p);
-
+            //Product isInTheList = products.Where(x => x.Description == p.Description).SingleOrDefault();
+            //if (isInTheList == null)
+            //{
+                products.Add(p);
+            //}
+            //else
+            //{
+            //    isInTheList.Price += p.Price;
+            //}
             UpdateCustomerInformationPannel(p);
 
             Purchase = Purchase + p.Price;
@@ -175,7 +181,7 @@ namespace Shop
             string currentPrice = String.Format("{0:f2}", product.Price);
             string currentDescriptionPadded = currentDescription.PadRight(30);
 
-            textInfoPanel.Text = currentDescriptionPadded + product.Price;
+            textInfoPanel.Text = currentDescriptionPadded + currentPrice;
 
         }
 
@@ -204,19 +210,35 @@ namespace Shop
 
             Order order = new Order();
             order.OrderDateTime = DateTime.Now;
-
+            //Order lastOrder=
             if (e.PaymentSuccess == true)
             {
-                //save transaction;
+                List<OrderedProduct> currentProductList = new List<OrderedProduct>();
+                // Removing duplicate keys and increasing Quantity value for each Product if duplicate event occur
                 foreach (var product in products)
                 {
-                    
 
-                    shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = product.ProductId });
+                    if (currentProductList.Count == 0)
+                    {
+                        currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
+                    }
+                    else if (currentProductList.Where(op => op.ProductID == product.ProductId) == null)
+                    {
+                        currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
+                    }
+                    else
+                    {
+                        int currentIndex = currentProductList.FindIndex(op => op.ProductID == product.ProductId);
+                        currentProductList[currentIndex].Quantity++;
+                    }
+                }                
+                
+                //save transaction;
 
-
+                foreach (var op in currentProductList)
+                {
+                    shopContext.OrderedProducts.Add(new OrderedProduct { ProductID = op.ProductID, Quantity = op.Quantity });
                 }
-
                 shopContext.Orders.Add(order);
                 shopContext.SaveChanges();
 

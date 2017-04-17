@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Каса" Height="757.002" Width="1409.185" Icon="ico/POS.png">
+        Title="Каса" Height="757.002" Width="1200.185" Icon="ico/POS.png">
     <Grid>
 
 
 
         <ListBox x:Name="listProductsChosen" 
                  HorizontalAlignment="Left" 
-                 Height="593" Margin="994,32,0,0" 
+                 Height="593" Margin="800,32,0,0" 
                  VerticalAlignment="Top" Width="362">
 
             <ListBox.ItemTemplate>
@@ -31,8 +31,9 @@
         <TabControl x:Name="tabControl1" 
                     HorizontalAlignment="Left" 
                     Height="515" Margin="35,110,0,0" 
+                    Padding="-50,0,0,0"
                     VerticalAlignment="Top" 
-                    Width="926" >
+                    Width="726" >
 
 
 
@@ -42,12 +43,12 @@
                  Height="40" Margin="35,32,0,0"
                  TextWrapping="Wrap" Text="Next Customer"
                  VerticalAlignment="Top"
-                 Width="926" 
+                 Width="726" 
                  FontSize="20"
                  FontFamily="Courier New"/>
-        <Button x:Name="buttonDelete" Content="Премахване" HorizontalAlignment="Left" Margin="994,652,0,0" VerticalAlignment="Top" Width="132" Height="44" FontSize="18" Background="#FFE45F5F" Click="DeleteItem"/>
-        <Button x:Name="buttonPay" Content="Заплащане" HorizontalAlignment="Left" Height="44" Margin="35,652,0,0" VerticalAlignment="Top" Width="926" FontSize="18" Background="#FF7AEC59" Click="OpenPayment"/>
-        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="1162,652,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18"/>
+        <Button x:Name="buttonDelete" Content="Премахване" HorizontalAlignment="Left" Margin="800,652,0,0" VerticalAlignment="Top" Width="132" Height="44" FontSize="18" Background="#FFE45F5F" Click="DeleteItem"/>
+        <Button x:Name="buttonPay" Content="Заплащане" HorizontalAlignment="Left" Height="44" Margin="35,652,0,0" VerticalAlignment="Top" Width="726" FontSize="18" Background="#FF7AEC59" Click="OpenPayment"/>
+        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="968,652,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18"/>
 
 
 

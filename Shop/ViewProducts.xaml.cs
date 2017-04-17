@@ -55,5 +55,10 @@ namespace Shop
             dataGrid.ItemsSource = filterProd;
 
         }
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            dataGrid.ItemsSource = prod.Products.ToList();
+        }
     }
 }

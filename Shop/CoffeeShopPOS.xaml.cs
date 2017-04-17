@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -94,23 +95,40 @@ namespace Shop
 
                 var filteredProduct = shopContext.Products.Where(p => p.ProductTypeId == i);
 
-                string btnImage = pt.ProductTypeId.ToString();
-                Uri resourceUri = new Uri("../../ico/" + btnImage+".png", UriKind.Relative);
-                StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
-                BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);
-                var backGround = new ImageBrush();
-                backGround.ImageSource = temp;
+                string btnImageByProductType = pt.ProductTypeId.ToString();
+                Uri imageResourceUri = new Uri("../../ico/" + btnImageByProductType + ".png", UriKind.Relative);
+                StreamResourceInfo imageStreamInfo = Application.GetResourceStream(imageResourceUri);
+                BitmapFrame tempBitmapFrame = BitmapFrame.Create(imageStreamInfo.Stream);
+                var backGroundbyProductType = new ImageBrush();
+                backGroundbyProductType.ImageSource = tempBitmapFrame;
 
                 foreach (var fp in filteredProduct.ToList())
                 {
-                    
+                    var btnBackground = new ImageBrush();
+                    if (fp.Picture == null)
+                    {
+                        btnBackground = backGroundbyProductType;
+                    }
+                    else
+                    {
+                        MemoryStream btnImage = new MemoryStream(fp.Picture);
+                        using (btnImage)
+                        {
+                            var btnImageSource = new BitmapImage();
+                            btnImageSource.BeginInit();
+                            btnImageSource.StreamSource = btnImage;
+                            btnImageSource.EndInit();
 
+                            btnBackground.ImageSource = btnImageSource;
+                        }
+                    }
+                        
                     string btnName = fp.Description.Replace(" ","_");
                     Button b = new Button() { Height = 120,
                                                 Width = 120 ,
                                                 Margin = new Thickness(10, 10, 10, 10),
                                                 HorizontalAlignment = HorizontalAlignment.Left,
-                                                Background = backGround, FontSize = 24};
+                                                Background = btnBackground, FontSize = 24};
 
                     b.Content = fp.Description.Replace(" ", "\n");
 

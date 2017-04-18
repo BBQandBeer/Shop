@@ -48,7 +48,7 @@
                  FontFamily="Courier New"/>
         <Button x:Name="buttonDelete" Content="Премахване" HorizontalAlignment="Left" Margin="800,652,0,0" VerticalAlignment="Top" Width="132" Height="44" FontSize="18" Background="#FFE45F5F" Click="DeleteItem"/>
         <Button x:Name="buttonPay" Content="Заплащане" HorizontalAlignment="Left" Height="44" Margin="35,652,0,0" VerticalAlignment="Top" Width="726" FontSize="18" Background="#FF7AEC59" Click="OpenPayment"/>
-        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="968,652,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="194" FontSize="18"/>
+        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="968,652,0,0" TextWrapping="Wrap" Text="Крайна сума" VerticalAlignment="Top" Width="194" FontSize="18"/>
 
 
 

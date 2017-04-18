@@ -157,15 +157,9 @@ namespace Shop
             Button b = (Button)sender;
 
             Product p = (Product)b.Tag;
-            //Product isInTheList = products.Where(x => x.Description == p.Description).SingleOrDefault();
-            //if (isInTheList == null)
-            //{
-                products.Add(p);
-            //}
-            //else
-            //{
-            //    isInTheList.Price += p.Price;
-            //}
+
+            products.Add(p);
+            
             UpdateCustomerInformationPannel(p);
 
             Purchase = Purchase + p.Price;
@@ -210,7 +204,7 @@ namespace Shop
 
             Order order = new Order();
             order.OrderDateTime = DateTime.Now;
-            //Order lastOrder=
+
             if (e.PaymentSuccess == true)
             {
                 List<OrderedProduct> currentProductList = new List<OrderedProduct>();
@@ -222,7 +216,7 @@ namespace Shop
                     {
                         currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
                     }
-                    else if (currentProductList.Where(op => op.ProductID == product.ProductId) == null)
+                    else if (currentProductList.Where(op => op.ProductID == product.ProductId).ToList().Count == 0)
                     {
                         currentProductList.Add(new OrderedProduct { ProductID = product.ProductId });
                     }
@@ -243,6 +237,10 @@ namespace Shop
                 shopContext.SaveChanges();
 
                 MessageBox.Show("Поръчката е изпълнена успешно");
+                Close();
+
+                CoffeeShopPOS coffeeShopPOS = new CoffeeShopPOS();
+                coffeeShopPOS.Show();
             }
         }
     }

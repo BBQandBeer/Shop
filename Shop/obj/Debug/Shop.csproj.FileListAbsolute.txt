@@ -82,3 +82,15 @@ C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\Advanc
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\Statistics.baml
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\ViewProducts.baml
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\Shop.g.resources
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\Shop.exe
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\Shop.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\DataLayer.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\DomainClasses.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\EntityFramework.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\DataLayer.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\DomainClasses.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\EntityFramework.xml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\Shop.Properties.Resources.resources
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\Shop.csproj.GenerateResource.Cache

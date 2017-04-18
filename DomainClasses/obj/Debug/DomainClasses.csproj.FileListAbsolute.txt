@@ -3,3 +3,8 @@ C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\Advanc
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\DomainClasses\obj\Debug\DomainClasses.csprojResolveAssemblyReference.cache
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\DomainClasses\obj\Debug\DomainClasses.dll
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\DomainClasses\obj\Debug\DomainClasses.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DomainClasses\bin\Debug\DomainClasses.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DomainClasses\bin\Debug\DomainClasses.pdb
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DomainClasses\obj\Debug\DomainClasses.csprojResolveAssemblyReference.cache
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DomainClasses\obj\Debug\DomainClasses.dll
+C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DomainClasses\obj\Debug\DomainClasses.pdb

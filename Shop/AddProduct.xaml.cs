@@ -26,7 +26,7 @@ namespace Shop
         ShopContext prod = new ShopContext();
         ProductType newProdTypes = new ProductType();
 
-        IList<ProductType> productTypesToCreate = ProductType.GetProductTypes();
+        IList<ProductType> productTypesToCreate = ProductType.GetProductTypes().ToList();
 
 
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Разглеждане на продукти" Height="Auto" Width="672" Icon="dialog ico/eye.png">
+        Title="Разглеждане на продукти" Height="Auto" Width="850" Icon="dialog ico/eye.png">
     <Grid>
         
         <ScrollViewer>
@@ -34,18 +34,21 @@
 
                     <DataGrid.Columns>
 
+                      
 
 
 
-                        <DataGridTextColumn Binding="{Binding ProductId}"
+
+                            <DataGridTextColumn Binding="{Binding ProductId}"
                                     Header="Номер" IsReadOnly="True" />
 
 
                         <DataGridTextColumn Binding="{Binding Description}"
-                                            Header="Име на продукт" IsReadOnly="True"
+                                            Header="Име на продукт" IsReadOnly="False"
                                             Width="300" />
+                        
                         <DataGridTextColumn Binding="{Binding Price}"
-                                    Header="Цена [лв.]" IsReadOnly="True"/>
+                                    Header="Цена [лв.]" IsReadOnly="False"/>
                         <!--<DataGridTextColumn Binding="{Binding ProductTypeId}"
                                     Header="Категория"/>-->
 
@@ -56,7 +59,45 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-                    </DataGrid.Columns>
+
+                        <!--<DataGridTemplateColumn Header="Редактирай"  MinWidth="50" MaxWidth="100" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="dialog ico/Update.png" MinWidth="50" MaxWidth="50"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+
+                        <DataGridTemplateColumn  Header="Изтрий"  MinWidth="50" MaxWidth="100" >
+                            
+                            <DataGridTemplateColumn.CellStyle>
+                                <Style TargetType="DataGridCell">
+                                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="Button_Click"></EventSetter>
+                                   
+                                </Style>
+                            </DataGridTemplateColumn.CellStyle>
+                            
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="dialog ico/delete.png" MinWidth="50" MaxWidth="50" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <!--<DataGridTemplateColumn  Header="Update"  MinWidth="50" MaxWidth="50">
+                            <DataGridTemplateColumn.CellStyle>
+                                <Style TargetType="DataGridCell">
+                                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="EventSetter_OnHandler"></EventSetter>
+                                </Style>
+                            </DataGridTemplateColumn.CellStyle>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="dialog ico\update.png"/>
+
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+                  </DataGrid.Columns>
 
                 </DataGrid>
 

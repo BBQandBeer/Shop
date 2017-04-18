@@ -242,7 +242,7 @@ namespace Shop
                 shopContext.Orders.Add(order);
                 shopContext.SaveChanges();
 
-                MessageBox.Show(e.PaymentSuccess.ToString());
+                MessageBox.Show("Поръчката е изпълнена успешно");
             }
         }
     }

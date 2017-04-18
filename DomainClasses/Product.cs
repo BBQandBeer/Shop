@@ -32,6 +32,7 @@ namespace DomainClasses
         public byte[] Picture { get; set; }
 
         public virtual ICollection<OrderedProduct> OrderedProducts { get; set; }
+
         public ProductType ProductType { get; set; }
         //public Order OrderId { get; set; }
         //[ForeignKey("SalesId")]

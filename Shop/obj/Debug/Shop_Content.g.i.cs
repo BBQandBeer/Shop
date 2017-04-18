@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ico/5.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dialog%20ico/update.png")]
 
 

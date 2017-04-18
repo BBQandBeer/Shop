@@ -66,6 +66,7 @@ namespace Shop
             else
             {
                 MessageBox.Show("Сума за връщане " + String.Format("{0:f2}", -total));
+                Close();
                 PaymentMade(this, new PaymentMadeEventArgs() { PaymentSuccess = true });
             }
 

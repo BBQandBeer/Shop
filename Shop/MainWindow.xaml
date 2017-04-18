@@ -10,7 +10,7 @@
     <Grid x:Name="Main">
         <Button x:Name="button_AddProducts" Content="Добави продукти" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" Width="400" Click="button_Click" Height="40" FontFamily="Arial Black" FontSize="16"/>
         <Button x:Name="button_ViewProducts" Content="Разгледай продукти" HorizontalAlignment="Center"  Margin="0,80,0,0" VerticalAlignment="Top" Width="400" Height="40" Click="button_ViewProducts_Click" FontFamily="Arial Black" FontSize="16"/>
-        <Button x:Name="button_ViewOrders" Content="Разгледай поръчки" HorizontalAlignment="Center"  Margin="0,140,0,0" VerticalAlignment="Top" Width="400" Height="40" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="button_ViewOrders" Content="Разгледай продажбите" HorizontalAlignment="Center"  Margin="0,140,0,0" VerticalAlignment="Top" Width="400" Height="40" FontFamily="Arial Black" FontSize="16" Click="ViewOrders_Click"/>
         <Button x:Name="button_OppenPOS" Content="Каса" HorizontalAlignment="Center"  Margin="120,200,120,0" VerticalAlignment="Top" Width="400" Height="40" FontFamily="Arial Black" FontSize="16" Click="button_OppenPOS_Click"/>
         <!--ioenrfenrfnq-->
     </Grid>

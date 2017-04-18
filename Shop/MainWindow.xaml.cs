@@ -53,5 +53,11 @@ namespace Shop
 
             coffeeShopPOS.Show();
         }
+
+        private void ViewOrders_Click(object sender, RoutedEventArgs e)
+        {
+            ViewOrders viewOrders = new ViewOrders();
+            viewOrders.Show();
+        }
     }
 }

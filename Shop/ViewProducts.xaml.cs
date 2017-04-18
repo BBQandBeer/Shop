@@ -39,7 +39,7 @@ namespace Shop
 
             var prodCollection = new ObservableCollection<Product>(prod.Products.ToList());
 
-            
+
 
             dataGrid.ItemsSource = prodCollection;// prod.Products.ToList();
             filterBox.ItemsSource = prod.ProductTypes.Select(x => x.ProductTypeName).ToList();
@@ -47,7 +47,7 @@ namespace Shop
 
         }
 
-        
+
 
         private void filterBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -58,7 +58,7 @@ namespace Shop
 
             var filterProd = prod.Products.Where(x => x.ProductTypeId == (filterBox.SelectedIndex + 1)).ToList();
 
-            dataGrid.ItemsSource = new ObservableCollection<Product>(filterProd.ToList()); 
+            dataGrid.ItemsSource = new ObservableCollection<Product>(filterProd.ToList());
 
         }
 
@@ -74,7 +74,7 @@ namespace Shop
             {
                 int selectedProductId = (dataGrid.SelectedItem as Product).ProductId;
                 Product pr = prod.Products.Where(produ => produ.ProductId == selectedProductId).SingleOrDefault();
-                var prTypeDeleted = pr.ProductType; 
+                var prTypeDeleted = pr.ProductType;
                 prod.Products.Remove(pr);
                 prod.SaveChanges();
                 var prodCollection = new ObservableCollection<Product>(prod.Products.ToList());
@@ -92,48 +92,33 @@ namespace Shop
                 return;
             }
 
-            
-           // filterBox.ItemsSource = prod.ProductTypes.Select(x => x.ProductTypeName).ToList();
-
-            //object source = e.OriginalSource;
-            //if (source.GetType() == typeof(Image))
-            {
-                //dataGrid.IsReadOnly = false;
-                //DataGridRow row = GetParent<DataGridRow>(source as DependencyObject);
-                //var cell = source as GridViewCell;
-                //var row = cell.ParentOfType<GridViewRow>();
 
 
-                // DataGrid grid = GetParent<DataGrid>(e.OriginalSource as DependencyObject);
-                // DataGridRow row = GetParent<DataGridRow>(e.OriginalSource as DependencyObject);
-
-                // var parentRow = gridCell.GetType().GetProperty("Update",
-                //BindingFlags.NonPublic | BindingFlags.Instance).GetValue(null) as DataGridRow;
-
-                //.GetType()
-                //.GetProperty("RowOwner",
-                //      BindingFlags.NonPublic | BindingFlags.Instance)
-                //.GetValue(null) as DataGridRow;
-
-                // selectedRow = FindParent<DataGridRow>(sender as DependencyObject);
-
-                //if (((DataGridCell)sender).Column.Header.ToString().ToUpperInvariant() == "DELETE")
-                //{
-                //    grdList.Items.Remove(selectedRow);
-                //}
-                //else
-                //{
-                //    DataGridCellsPanel panel = FindVisualChild<DataGridCellsPanel>(selectedRow);
-
-                //    DataGridCell dgc = panel.Children[0] as DataGridCell;
-                //    dgc.Focus();
-                //    grdList.BeginEdit();
-
-                //    e.Handled = true;
-                //}
-            }
         }
 
+        private void Button_Click_Edit(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+
+
+                //MessageBox.Show("Моля, изберете клетка за да редактирате продукта и натиснете отново след редакция");
+                prod.SaveChanges();
+                //MessageBox.Show("Успешно редактирахте продукта");
+
+
+            }
+
+            catch
+            {
+
+                MessageBox.Show("Моля, изберете клетка за да редактирате продукта");
+                return;
+            }
+
+
+
+        }
 
     }// end class view product
 }

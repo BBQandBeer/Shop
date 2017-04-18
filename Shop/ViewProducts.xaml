@@ -67,6 +67,21 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>-->
+                        <DataGridTemplateColumn  Header="Редактирай"  MinWidth="50" MaxWidth="100" >
+
+                            <DataGridTemplateColumn.CellStyle>
+                                <Style TargetType="DataGridCell">
+                                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="Button_Click_Edit"></EventSetter>
+
+                                </Style>
+                            </DataGridTemplateColumn.CellStyle>
+
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="dialog ico/update.png" MinWidth="50" MaxWidth="50" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
 
                         <DataGridTemplateColumn  Header="Изтрий"  MinWidth="50" MaxWidth="100" >
                             
@@ -83,6 +98,7 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
+
 
                         <!--<DataGridTemplateColumn  Header="Update"  MinWidth="50" MaxWidth="50">
                             <DataGridTemplateColumn.CellStyle>

@@ -5,27 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Разглеждане на продажбите" Height="Auto" Width="672" Icon="dialog ico/eye.png" Background="{x:Null}">
-    <Grid Background="#FFEEDDDD">
+        Title="Разглеждане на продажбите" Height="Auto" Width="672" Icon="dialog ico/eye.png" Background="White" Opacity="0.9">
+    <Grid >
         <ScrollViewer>
             <StackPanel>
-                <!--ComboBox x:Name="filterBox"
-                          HorizontalAlignment="Left" 
-                          Margin="31,20,0,0" Width="176" 
-                          SelectedIndex="0" SelectedValuePath="ProductId" 
-                          SelectionChanged="filterBox_SelectionChanged"/>
-
-                <Button x:Name="Reset" Content="Изчисти филтъра"
-                        Margin="10,-22,0,0" Width="176" Height="22" Background="#FFE84824" Click="btnReset_Click"></Button-->
-
-
+               
                 <DataGrid x:Name="dataGrid" 
                   AutoGenerateColumns="False"
                   HorizontalAlignment="Left" 
                   Margin="40,36,0,0" 
                   VerticalAlignment="Center" 
                   Height="Auto" 
-                  Width="Auto" FontFamily="Andalus" FontSize="14" >
+                  Width="Auto" FontFamily="Andalus" FontSize="14" BorderBrush="Black" Background="#FF638EB8">
+                  
 
 
                     <DataGrid.Columns>

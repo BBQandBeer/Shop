@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Каса" Height="757.002" Width="1200.185" Icon="ico/POS.png">
+        Title="Каса" Height="757.002" Width="1200.185" Icon="ico/POS.png" Background="#FFC8E0C6">
     <Grid>
 
 
@@ -13,7 +13,7 @@
         <ListBox x:Name="listProductsChosen" 
                  HorizontalAlignment="Left" 
                  Height="593" Margin="800,32,0,0" 
-                 VerticalAlignment="Top" Width="362">
+                 VerticalAlignment="Top" Width="362" BorderBrush="Black">
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -33,8 +33,7 @@
                     Height="515" Margin="35,110,0,0" 
                     Padding="-50,0,0,0"
                     VerticalAlignment="Top" 
-                    Width="726" >
-
+                    Width="726" BorderBrush="Black" >
 
 
         </TabControl>
@@ -45,10 +44,10 @@
                  VerticalAlignment="Top"
                  Width="726" 
                  FontSize="20"
-                 FontFamily="Courier New"/>
-        <Button x:Name="buttonDelete" Content="Премахване" HorizontalAlignment="Left" Margin="800,652,0,0" VerticalAlignment="Top" Width="132" Height="44" FontSize="18" Background="#FFE45F5F" Click="DeleteItem"/>
-        <Button x:Name="buttonPay" Content="Заплащане" HorizontalAlignment="Left" Height="44" Margin="35,652,0,0" VerticalAlignment="Top" Width="726" FontSize="18" Background="#FF7AEC59" Click="OpenPayment"/>
-        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="968,652,0,0" TextWrapping="Wrap" Text="Крайна сума" VerticalAlignment="Top" Width="194" FontSize="18"/>
+                 FontFamily="Courier New" BorderBrush="Black"/>
+        <Button x:Name="buttonDelete" Content="Премахване" HorizontalAlignment="Left" Margin="800,652,0,0" VerticalAlignment="Top" Width="132" Height="44" FontSize="18" Background="#FFDC3838" Click="DeleteItem" BorderBrush="Black"/>
+        <Button x:Name="buttonPay" Content="Заплащане" HorizontalAlignment="Left" Height="44" Margin="35,652,0,0" VerticalAlignment="Top" Width="726" FontSize="18" Background="#FF56E64F" Click="OpenPayment" BorderBrush="Black"/>
+        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="44" Margin="968,652,0,0" TextWrapping="Wrap" Text="Крайна сума" VerticalAlignment="Top" Width="194" FontSize="18" BorderBrush="Black"/>
 
 
 

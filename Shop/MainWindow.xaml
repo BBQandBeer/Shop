@@ -5,32 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="BBQandBeer Shop Project" Height="Auto" Width="700" Icon="ico/Open.png" Foreground="#FF471010" ResizeMode="CanResizeWithGrip">
-    <Window.Background>
-        <SolidColorBrush Color="#FF99AABB" Opacity="0.8"/>
-    </Window.Background>
+        Title="BBQandBeer Shop Project" Height="Auto" Width="720" Icon="ico/Open.png" Foreground="#FF471010" ResizeMode="CanResizeWithGrip" Background="#FFA3BFAA">
+  
 
     <Grid x:Name="Main">
-        <Button x:Name="button_AddProducts" Content="Добави продукти" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="448" Click="button_Click" Height="60" FontFamily="Arial Black" FontSize="24" BorderBrush="Black" BorderThickness="2" >
+        <Button x:Name="button_AddProducts" Content="Добави продукти" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="448" Click="button_Click" Height="60" FontFamily="Arial Black" FontSize="24" BorderBrush="Black" BorderThickness="1" >
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button_ViewProducts" Content="Разгледай продукти" HorizontalAlignment="Center"  Margin="121,110,121,0" VerticalAlignment="Top" Width="448" Height="60" Click="button_ViewProducts_Click" FontFamily="Arial Black" FontSize="24" BorderBrush="Black" BorderThickness="2" >
+        <Button x:Name="button_ViewProducts" Content="Разгледай продукти" HorizontalAlignment="Center"  Margin="121,110,121,0" VerticalAlignment="Top" Width="448" Height="60" Click="button_ViewProducts_Click" FontFamily="Arial Black" FontSize="24" BorderBrush="Black" BorderThickness="1" >
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button_ViewOrders" Content="Разгледай продажбите" HorizontalAlignment="Center"  Margin="121,190,121,0" VerticalAlignment="Top" Width="448" Height="60" FontFamily="Arial Black" FontSize="24" Click="ViewOrders_Click" BorderBrush="Black" BorderThickness="2" >
+        <Button x:Name="button_ViewOrders" Content="Разгледай продажбите" HorizontalAlignment="Center"  Margin="121,190,121,0" VerticalAlignment="Top" Width="448" Height="60" FontFamily="Arial Black" FontSize="24" Click="ViewOrders_Click" BorderBrush="Black" BorderThickness="1" >
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button_OppenPOS" Content="Каса" HorizontalAlignment="Center"  Margin="121,358,121,0" VerticalAlignment="Top" Width="448" Height="120" FontFamily="Arial Black" FontSize="24" Click="button_OppenPOS_Click" BorderBrush="Black" BorderThickness="2" >
-            <Button.Background>
-                <SolidColorBrush Color="#FF3AE688" Opacity="0.91"/>
-            </Button.Background>
-        </Button>
+        <Button x:Name="button_OppenPOS" Content="Каса" HorizontalAlignment="Center"  Margin="121,358,121,0" VerticalAlignment="Top" Width="448" Height="120" FontFamily="Arial Black" FontSize="24" Click="button_OppenPOS_Click" Background="#FF56E64F" BorderBrush="Black" BorderThickness="1"/>
         <!--ioenrfenrfnq-->
     </Grid>
 </Window>

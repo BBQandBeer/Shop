@@ -86,6 +86,11 @@ namespace Shop
                 tab.Header = pt.ProductTypeName;
                 tabControl1.Items.Add(tab); //CREATE TAB WITH PROD CAT. NAME
 
+                tab.BorderBrush = Brushes.Black;
+                tab.Background = Brushes.White;
+                tab.BorderThickness = new Thickness(1, 1, 1, 1);
+               
+
                 WrapPanel myWrap = new WrapPanel();
                 myWrap.Name = "myWrap";
                 myWrap.HorizontalAlignment = HorizontalAlignment.Left;

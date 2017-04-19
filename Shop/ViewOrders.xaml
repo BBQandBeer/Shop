@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Разглеждане на продажбите" Height="Auto" Width="672" Icon="dialog ico/eye.png" Background="White" Opacity="0.9">
+        Title="Разглеждане на продажбите" Height="Auto" Width="672" Icon="dialog ico/eye.png" Background="#FFC8E0C6" Opacity="0.9">
     <Grid >
         <ScrollViewer>
             <StackPanel>
@@ -16,7 +16,7 @@
                   Margin="40,36,0,0" 
                   VerticalAlignment="Center" 
                   Height="Auto" 
-                  Width="Auto" FontFamily="Andalus" FontSize="14" BorderBrush="Black" Background="#FF638EB8">
+                  Width="Auto" FontFamily="Andalus" FontSize="14" BorderBrush="Black" Background="#FFFFFFFF">
                   
 
 

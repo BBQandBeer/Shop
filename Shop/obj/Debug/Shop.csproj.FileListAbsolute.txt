@@ -24,8 +24,6 @@ C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\CoffeeShopPOS.baml
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Payment.g.cs
 C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Payment.baml
-C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Statistics.g.cs
-C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\Statistics.baml
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\bin\Debug\Shop.exe.config
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.exe
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\Shop\Shop\obj\Debug\Shop.pdb
@@ -96,3 +94,5 @@ C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\Advanc
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\Shop.csproj.GenerateResource.Cache
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\ViewOrders.g.cs
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\Shop\obj\Debug\ViewOrders.baml
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\ViewOrders.g.cs
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\Shop\obj\Debug\ViewOrders.baml

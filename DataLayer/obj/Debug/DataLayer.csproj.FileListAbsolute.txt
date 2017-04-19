@@ -30,3 +30,19 @@ C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\Advanc
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DataLayer\obj\Debug\DataLayer.dll
 C:\Users\Dimitar Daskalov\Dropbox\SoftwareEngeneer\C#DBFundamentalsModule\AdvancedPlusEntityFrameworks\PROJECT\ShopV2\Shop\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\DomainClasses.dll
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\DomainClasses.pdb
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.Migrations.InitialCreate.resources
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.Migrations.UpdateOrderedProductQntyField.resources
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.Migrations.QuantityDefaultValueUpdate.resources
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Iliya\Documents\Visual Studio 2015\Projects\Shop_project\DataLayer\obj\Debug\DataLayer.pdb

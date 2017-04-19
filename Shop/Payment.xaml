@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Заплащане" Height="301.592" Width="458.355" Icon="dialog ico/Money icon.png">
     <Grid>
-        <Label x:Name="labelBill" Content="Сметка:" HorizontalAlignment="Left" Margin="56,63,0,0" VerticalAlignment="Top" Height="26" Width="108" FontSize="14"/>
-        <Label x:Name="labelPayed" Content="Платени:" HorizontalAlignment="Left" Margin="56,112,0,0" VerticalAlignment="Top" Height="26" Width="108" FontSize="14"/>
+        <Label x:Name="labelBill" Content="Сметка:" HorizontalAlignment="Left" Margin="56,54,0,0" VerticalAlignment="Top" Height="35" Width="108" FontSize="16"/>
+        <Label x:Name="labelPayed" Content="Платени:" HorizontalAlignment="Left" Margin="56,112,0,0" VerticalAlignment="Top" Height="35" Width="108" FontSize="16"/>
         <TextBox x:Name="textBoxBill" HorizontalAlignment="Left" Height="26" Margin="213,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
         <TextBox x:Name="textBoxPayed" HorizontalAlignment="Left" Height="26" Margin="213,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
         <Button x:Name="buttonPayment" Content="ОК" HorizontalAlignment="Left" Margin="139,195,0,0" VerticalAlignment="Top" Width="204" Background="#FF56E64F" Height="32" Click="PaymentHasBeenMade"/>

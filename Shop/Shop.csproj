@@ -73,9 +73,6 @@
     <Compile Include="Payment.xaml.cs">
       <DependentUpon>Payment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Statistics.xaml.cs">
-      <DependentUpon>Statistics.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewOrders.xaml.cs">
       <DependentUpon>ViewOrders.xaml</DependentUpon>
     </Compile>
@@ -103,10 +100,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Payment.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Statistics.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
